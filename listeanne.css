@@ -1,5 +1,5 @@
 header {
-	position: flex;
+	
 	width: 100%;
 	height: 100%;
 	left: 0px;
@@ -7,13 +7,14 @@ header {
 	background-color: #7289DA;
 }
 
+
 img {
 	width: 5%;
 	height: 5%;	
 }
 
 body{
-	position: flex;
+	flex-direction:row;
 	width: 100%;
 	height: 100%;
 	left: 0px;
@@ -22,7 +23,7 @@ body{
 }
 
 .star{
-
+	float :left;
 	margin:100px auto;
 	width: 0;
 	height: 0;
@@ -70,7 +71,7 @@ body{
 }
 
 nav{
-	position: flex;
+	float:right;
 	width: 50px;
 	height: 600px;
 	right: 50px;
@@ -79,7 +80,7 @@ nav{
 }
 
 footer{
-	position: flex;
+	float:left;
 	width: 100%;
 	height: 100%;
 	left: 0px;
@@ -87,16 +88,12 @@ footer{
 	background-color: #7289DA;
 }
 .circle {
-	/*position: absolute;
-	width: 56px;
-	height: 48px;
-	left: 228px;
-	top: 508px;
-	background: #C4C4C4;*/
-	position :flex;
+	
+	float:left;
 	height: 100px; 
 	width: 100px; 
 	background-color: #C4C4C4;
 	border: 1px solid rgba(0, 0, 0, 1);
 	border-radius: 50%; 
+	top:100px;
 }
