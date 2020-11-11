@@ -1,0 +1,27 @@
+*{
+    box-sizing: border-box;
+    max-width:1170px;
+    margin-left:auto;
+    margin-right:auto;
+    padding:1em;
+
+}
+
+body{
+    background:#7289DA;
+    padding: 1em;
+    font-family: Open sans;
+    line-height:1.6;
+
+
+}
+h1{
+    text-align: center;
+}
+
+fieldset{
+    background: #424549;
+}
+.H1{
+    text-align: center;
+}

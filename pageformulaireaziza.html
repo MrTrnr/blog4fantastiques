@@ -1,25 +1,39 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-    <title>la page d'Aziza</title>
     <meta charset= 'utf-8'>
     <meta name="viewport" content="width, initial-scale-1.0"/>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>La page d'Aziza</title>
+    <link rel="stylesheet" href="pageformulaireaziza.css">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
 </head>
 <body>
-    <H1>Page formulaire écrire un article<H1>
+  <div class="container">
+    <H1>FORMULAIRE DE RESSOURCES<H1>
+    </div>
         <form>
             <fieldset>
-              <label for="TITRE">TITRE :</label><br>
-              <input type="text" id="titre" title="titre"><br>
-              <label for="AUTEUR">AUTEUR :</label><br>
-              <input type="text" id="name" name="auteur"><br>
-              <label for="commentField">PARAGRAPHE :</label><br>
-              <textarea  id="commentField" name="paragraphe"></textarea><br>
-              <label for="DATE">DATE :</label><br>
-              <input type="date" id="date" date="date"><br>
+              <P>
+              <label>TITRE :</label><br>
+              <input type="text" id="titre" title="titre">
+              </P>
+              <P>
+              <label>AUTEUR :</label><br>
+              <input type="text" id="name" name="auteur">
+              </P>
+              <P>
+              <label>PARAGRAPHE :</label><br>
+              <textarea  name="paragraphe" rows="5"></textarea>
+              </P>
+              <P>
+              <label>DATE :</label><br>
+              <input type="date" id="date" date="date">
+              </P>
               </div>
-              <input class="button-primary" type="submit" value="VALIDER">
+              <button>VALIDER</button>
             </fieldset>
           </form>
+        
 </body>
 </html>
