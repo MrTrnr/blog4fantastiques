@@ -25,3 +25,33 @@ fieldset{
 .H1{
     text-align: center;
 }
+button{
+    background-color:#7289DA ;
+    margin: 0 auto;
+}
+.footer-menu-one{
+    width:100%;
+    height: auto;
+    margin: auto;
+    margin-top:20px;
+}
+.footer-menu-one ul{
+
+    margin:0px;
+    padding:0px;
+    text-align:center;
+}
+.footer-menu-one ul li{
+    display:inline-block;
+    margin: 0px 20px;
+}
+.footer-menu-one ul li a{
+    font-family: open sans;
+    font-size:15px;
+    text-transform:uppercase;
+    color:black;
+}
+
+
+
+
