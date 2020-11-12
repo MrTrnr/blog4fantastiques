@@ -1,0 +1,2 @@
+[1112/092603.197:ERROR:directory_reader_win.cc(43)] FindFirstFile: Le chemin d’accès spécifié est introuvable. (0x3)
+[1112/092603.287:ERROR:filesystem_win.cc(129)] GetFileAttributes C:\Users\BRAHIMI\AppData\Local\Google\Chrome\User Data\Crashpad\attachments\2ce448ba-2bc8-4c63-afcc-ecbbc1f07f13: Le chemin d’accès spécifié est introuvable. (0x3)

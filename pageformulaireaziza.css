@@ -1,39 +1,56 @@
 *{
-    box-sizing: border-box;
     max-width:1170px;
     margin-left:auto;
     margin-right:auto;
     padding:1em;
+    box-sizing: border-box;
+
 
 }
 
-body{
+html,body{
     background:#7289DA;
-    padding: 1em;
-    font-family: Open sans;
+    font-family: 'Open Sans', sans-serif;
     line-height:1.6;
-
-
 }
-h1{
-    text-align: center;
-}
+
 
 fieldset{
     background: #424549;
+    padding-bottom: 550px;
 }
-.H1{
+input{
+    background:#C4C4C4 ;
+    border:2px solid rgba(0,0,0,0);
+    width:100%;
+    
+
+}
+label{
+    font-family:'Open Sans', sans-serif;
+    font-size: 20px;
+}
+textarea{
+    background:#C4C4C4 ;
+    width:100%;
+
+}
+H1{
     text-align: center;
+    font-family: 'Open Sans', sans-serif;
+
 }
 button{
     background-color:#7289DA ;
-    margin: 0 auto;
+    float:right;
+    width:40%;
+    font-size: 20px;
 }
 .footer-menu-one{
     width:100%;
-    height: auto;
-    margin: auto;
-    margin-top:20px;
+    height: 100%;
+    bottom: 0;
+    left:0;
 }
 .footer-menu-one ul{
 
@@ -46,7 +63,7 @@ button{
     margin: 0px 20px;
 }
 .footer-menu-one ul li a{
-    font-family: open sans;
+    font-family: 'Open Sans', sans-serif;
     font-size:15px;
     text-transform:uppercase;
     color:black;
