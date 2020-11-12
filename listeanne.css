@@ -3,7 +3,7 @@ html{
 }
 header {
 	width : 100%;
-	height :100%;
+	
 	background-color: #7289DA;
 }
 
@@ -16,37 +16,37 @@ h1{
 	margin :0 0 0 0;
 }
 h2{
-	text-align:right;
-	margin :10px 10px 10px 10px;
 	
-	/*margin :1px*/;
+	text-align: center;
+	margin :0 20px 0 1200px;
 }
 
-img {
+#logodiscord {
 	float:right;
 	width: 5%;
 	height: 5%;
-	/*margin-right: 100px*/;	
+	margin-right: 45px;
 }
 
 body{
-
+	height :50%;
 	background-color: #424549;
+	margin :0
 }
 
 #main{
 	display:flex;
 	flex-direction: column;
+	
 }
 #bloc1{
 	display:flex;
 	justify-content: space-around;
-	background-color: yellow;
-	/*flex-direction:row;*/
-	/*justify-content:space-around;
-	/*align-items :center;*/
+	margin :-15px -15px -15px -15px;
+
 }
-/*.star{
+
+.star{
 	z-index: -1;
 	margin:200px auto;
 	width: 0;
@@ -70,16 +70,14 @@ body{
 	position: absolute;
 	top:30px;
 	left:-50px;
-}*/
+}
+
 #bloc2{
 	display:flex;
 	justify-content: space-around;
-	background-color: yellow;
-	/*display:flex;
-	justify-content :space-around;
-	/*align-items :center;*/
+		
 }
-/*.white {
+.white {
 	
 	border-bottom: 100px solid #C4C4C4;
 	position: relative;
@@ -89,15 +87,17 @@ body{
 .white:after{
 	
 	border-top: 100px solid #C4C4C4;
-		position: absolute;
-	}*/
+	position: absolute;
+	}
 h3{
 	text-align: center;
+	margin : 50px 30px 20px -30px;
 }
 footer{
 	width: 100%;
 	height: 100%;
 	background-color: #7289DA;
+	margin:200px 200px 200px 0px;
 }
 .circle {
 	
@@ -116,10 +116,12 @@ footer{
 #contenu {
 	display:flex;
 	width : 400px;
+	height :50px;
 	justify-content: space-around;
-	margin :10px 100px 100px 10px;
+	margin :10px 100px 100px 100px;
 } 
 
 h4{
 	text-align: center;
+
 }
