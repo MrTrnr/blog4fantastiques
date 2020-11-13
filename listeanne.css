@@ -3,116 +3,71 @@ html{
 }
 header {
 	width : 100%;
-	
 	background-color: #7289DA;
 }
-
 #entete{
 	display:flex;
-	flex-direction:column;
-	justify-content: center;
+	flex-direction:row;
+	justify-content: space-around;
 }
 h1{
 	margin :0 0 0 0;
 }
-h2{
-	
-	text-align: center;
-	margin :0 20px 0 1200px;
+#logoTexte{
+	text-align :right;
 }
 
 #logodiscord {
-	float:right;
-	width: 5%;
-	height: 5%;
-	margin-right: 45px;
+	width: 15%;
 }
-
 body{
-	height :50%;
 	background-color: #424549;
 	margin :0
 }
-
 #main{
+
 	display:flex;
 	flex-direction: column;
-	
 }
 #bloc1{
 	display:flex;
+	text-align:center;
 	justify-content: space-around;
-	margin :-15px -15px -15px -15px;
-
+}	
+#star{
+	width:20%;
+	flex-direction:row;
+	text-align: center;
+	margin :center;
 }
-
-.star{
-	z-index: -1;
-	margin:200px auto;
-	width: 0;
-	height: 0;
-	border-left: 50px solid transparent;
-	border-right: 50px solid transparent;
-	border-bottom: 100px solid #1E2124;
-	position: relative;
-	
-}
-
-.star:after{
-	z-index: -1;
-	content:'';
-	border: 1px solid #1E2124;
-	border-left: 50px solid transparent;
-	border-right: 50px solid transparent;
-	border-top: 100px solid #1E2124;
-	width:0;
-	height:0;
-	position: absolute;
-	top:30px;
-	left:-50px;
-}
-
 #bloc2{
 	display:flex;
+	text-align:center;
 	justify-content: space-around;
-		
-}
-.white {
-	
-	border-bottom: 100px solid #C4C4C4;
-	position: relative;
-	
 }
 
-.white:after{
-	
-	border-top: 100px solid #C4C4C4;
-	position: absolute;
-	}
 h3{
+	font-size:95%;
 	text-align: center;
-	margin : 50px 30px 20px -30px;
+	margin:0em;
 }
 footer{
+	bottom:0px;
 	width: 100%;
-	height: 100%;
 	background-color: #7289DA;
-	margin:200px 200px 200px 0px;
-}
-.circle {
-	
-	float:left;
-	height: 100px; 
-	width: 100px; 
-	background-color: #C4C4C4;
-	border: 1px solid rgba(0, 0, 0, 1);
-	border-radius: 50%; 
-	top:200%;
+	position:absolute;
 }
 #bottom {
 	display:flex;
 	justify-content: center;
 } 
+.circle {
+	height: 100px; 
+	width: 100px; 
+	background-color: #C4C4C4;
+	border: 1px solid rgba(0, 0, 0, 1);
+	border-radius: 50%; 
+}
 #contenu {
 	display:flex;
 	width : 400px;
@@ -123,5 +78,39 @@ footer{
 
 h4{
 	text-align: center;
-
 }
+/*ESSAI STARS*/
+/*.star{
+	z-index: -1;
+	width: 0;
+	height: 0;
+	border-left: 50px solid transparent;
+	border-right: 50px solid transparent;
+	border-bottom: 100px solid #1E2124;
+	position: relative;
+
+.star:after{
+	/*z-index: -1;
+	content:'';
+	border: 1px solid #1E2124;
+	border-left: 50px solid transparent;
+	border-right: 50px solid transparent;
+	border-top: 100px solid #1E2124;
+	width:0;
+	height:0;
+	position: absolute;
+	top:30px;
+	left:-50px;
+
+}*/
+/*.white {/*
+	
+	border-bottom: 100px solid #C4C4C4;
+	position: relative;
+	
+}
+.white:after{/*
+	
+	border-top: 100px solid #C4C4C4;
+	position: absolute;
+	}*/
