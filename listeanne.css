@@ -33,12 +33,15 @@ body{
 	display:flex;
 	text-align:center;
 	justify-content: space-around;
+	margin-top :-0,5em;
 }	
 #star{
+	z-index:-1;
 	width:20%;
 	flex-direction:row;
 	text-align: center;
 	margin :center;
+
 }
 #bloc2{
 	display:flex;
