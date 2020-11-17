@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Formulaire Blog</title>
+    <script src="formulaireScript.js" defer></script>
+</head>
+<body>
+    <h1>mon formulaire de test</h1>
+    <form method="post" action="http://localhost:3000/articles">
+        <label for="auteur">auteur : </label>
+        <input type="text" name="auteur" id="auteur"><br><br>
+
+        <label for="titre">titre : </label>
+        <input type="text" name="titre" id="titre"><br><br>
+
+        <label for="contenu">contenu : </label>
+        <input type="text" name="contenu" id="contenu"><br><br>
+
+        <label for="date">date : </label>
+        <input type="text" name="date" id="date"><br><br>
+
+        <input type="submit" value="envoi">
+    </form>
+
+    <p id="nomauteur" onclick="myFunction()">Afficher le nom d'un auteur (innerHTML).</p>
+
+</body>
+</html>
+
+    <!--<script>
+        console.log("coucou");
+        function fetchPool(){
+    fetch("http://localhost:3000/piscines/").then(response => response.json()).then(function(allPool){
+                //affiche tout ce qu'il y a dans la base
+        console.log(allPool);
+        //affiche la longueur de la base (nombre d'éléments présents dans le tableau)
+        console.log(allPool.length)
+        //pour variable de 0 à la longueur de la base tu m'affiches les données correspondantes à un index.
+        for (var i = 0 ; i < allPool.length ; i++){
+            if (allPool[i].auteur!=null){
+                document.getElementById("nomauteur").innerHTML = allPool[i].auteur;
+                console.log(allPool[i].auteur);
+                console.log(allPool[i].titre);
+                console.log(allPool[i].paragraphe);
+                console.log(allPool[i].date);
+            }
+            
+        }
+        
+        
+    })
+}
+
+// appel de la fonction
+fetchPool();
+
+function myFunction() {
+  document.getElementById("nomauteur").innerHTML = "allPool.auteur";
+}
+
+//myFunction();
+
+    </script>!-->
+
+<!--concernant app.js, ne pas oublier à partir du dossier backend d'entrer les lignes de commandes à partir d'un terminal :
+npm install et de configurer le point d'entrer en tant que app.js
+installer les dépendances (mongoose, multer, express) en faisant :
+npm install --save mongoose
+npm install --save multer
+npm install --save express*/
