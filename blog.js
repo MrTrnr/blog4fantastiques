@@ -5,7 +5,7 @@ var mongoose = require('mongoose');//stocke mongoose dans une variable
 var options = { server: { socketOptions: { keepAlive: 300000, connectTimeoutMS: 30000 } },
     replset: { socketOptions: { keepAlive: 300000, connectTimeoutMS : 30000 } } };
 //cherche un fichier config.blog.json
-const urlblog = require("config_blog.json");
+const urlblog = require("./config_blog.json");
 // var urlmongo = va chercher l'adresse de la base de données.
 var urlmongo = urlblog.url;
 db.on('error', console.error.bind(console, 'Erreur lors de la connexion'));
