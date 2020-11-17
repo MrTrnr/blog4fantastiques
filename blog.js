@@ -5,9 +5,12 @@ var mongoose = require('mongoose');//stocke mongoose dans une variable
 var options = { server: { socketOptions: { keepAlive: 300000, connectTimeoutMS: 30000 } },
     replset: { socketOptions: { keepAlive: 300000, connectTimeoutMS : 30000 } } };
 //cherche un fichier config.blog.json
-const urlblog = require("config_blog.json");
+const urlblog = require("./config_blog.json");
 // var urlmongo = va chercher l'adresse de la base de données.
 var urlmongo = urlblog.url;
+mongoose.connect(urlmongo, options);
+var db = mongoose.connection;
+console.log (urlblog.url);
 db.on('error', console.error.bind(console, 'Erreur lors de la connexion'));
 db.once('open', function (){
     console.log("Connexion à la base OK");
@@ -34,14 +37,14 @@ app.use(bodyParser.json());
 //var multer = require('multer')().single();
 //app.use(multer);
 
-// model for Piscine
-var piscineSchema = mongoose.Schema({
+// model for Article
+var articleSchema = mongoose.Schema({
     auteur: String,
     titre: String,
-    paragraphe: String,
+    contenu: String,
     date: String
 });
-var Piscine = mongoose.model('Piscine', piscineSchema);
+var Article = mongoose.model('Article', articleSchema);
 
 // routes
 var myRouter = express.Router();
@@ -49,47 +52,45 @@ var myRouter = express.Router();
 // route for homepage
 myRouter.route('/')
     .all(function(req,res){
-        res.json({message : "Bienvenue sur notre API de piscine", methode : req.method});
+        res.json({message : "Bienvenue sur notre API de blog", methode : req.method});
     });
 
-myRouter.route('/piscines')
-    // route to get list of Piscines
+myRouter.route('/articles')
+    // route to get list of articles
     .get(function(req,res){
-        Piscine.find(function(err, piscines){
+        Article.find(function(err, articles){
             if (err){
                 res.send(err);
             }
-            res.json(piscines);
+            res.json(articles);
         });
     })
-
-
-    // route to add a Piscine
+    // route to add a Article
     .post(function(req,res){
     
-        var piscine = new Piscine();
+        var article = new Article();
         // test
     	console.log(req.body);
-        piscine.auteur = req.body.auteur;
-        piscine.titre = req.body.titre;
-        piscine.paragraphe = req.body.paragraphe;
-        piscine.date = req.body.date;
-        piscine.save(function(err){
+        article.auteur = req.body.auteur;
+        article.titre = req.body.titre;
+        article.contenu = req.body.contenu;
+        article.date = req.body.date;
+        article.save(function(err){
             if(err){
                 res.send(err);
             }
-            res.json({message : 'Bravo, la piscine est maintenant stockée en base de données'});
+            res.json({message : 'Bravo, l\'article est maintenant stocké en base de données'});
 
         });
     });
 
-myRouter.route('/piscines/:piscine_id')
-    // route to get a piscine
+myRouter.route('/articles/:article_id')
+    // route to get an article
     .get(function(req,res){
-        Piscine.findById(req.params.piscine_id, function(err, piscine) {
+        Article.findById(req.params.article_id, function(err, article) {
             if (err)
                 res.send(err);
-            res.json(piscine);
+            res.json(article);
         });
     });
 
