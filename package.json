@@ -1,0 +1,24 @@
+{
+  "name": "blog4fantastiques",
+  "version": "1.0.0",
+  "description": "",
+  "main": "blog.js",
+  "dependencies": {
+    "express": "^4.17.1",
+    "mongoose": "^5.10.15"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MrTrnr/blog4fantastiques.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MrTrnr/blog4fantastiques/issues"
+  },
+  "homepage": "https://github.com/MrTrnr/blog4fantastiques#readme"
+}
