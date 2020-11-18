@@ -12,14 +12,16 @@
             if (allArticle[i].auteur!=null){
                 document.getElementById("nomauteur").innerHTML +=" "+ "<br>" + allArticle[i].auteur;
                 console.log(allArticle[i].auteur);
-                console.log(allArticle[i].auteur);
+                document.getElementById("titre").innerHTML +=" "+ "<br>" + allArticle[i].titre;
                 console.log(allArticle[i].titre);
                 console.log(allArticle[i].contenu);
+                document.getElementById("date").innerHTML +=" "+ "<br>" + allArticle[i].date;
                 console.log(allArticle[i].date);
             }
             
         }
-        
+       
+                   
         
     })
 }
@@ -29,6 +31,8 @@ fetchArticle();
 
 function myFunction() {
   document.getElementById("nomauteur").innerHTML = "allArticle.auteur";
+  document.getElementById("titre").innerHTML = "allArticle.titre";
+  document.getElementById("date").innerHTML = "allArticle.date";
 }
 
 var ok = function(){

@@ -31,36 +31,45 @@ body{
 	display:flex;
 	flex-direction: column;
 }
-#bloc1{
-	display:flex;
-	text-align:left;
-	justify-content: space-around;
-	margin-top :-0,5em;
-}	
+
 #star{
 	z-index:-1;
 	width:15%;
-	flex-direction:row;
-	text-align: left;
-	margin :left;
+	/*flex-direction:row;
+	text-align: left;*/
+	margin-left :80%;
 
 }
+#bloc1{
+	display:flex;
+	text-align:center;
+	/*margin-right :2%;*/
+	/*justify-content: space-around;
+	/*margin-top :-0,5em;*/
+}	
+
 #bloc2{
 	display:flex;
-	text-align:left;
-	justify-content: space-around;
+	text-align:center;
+	/*margin-right :2%;/
+	/*margin :center;
+	/*color:red;
+	margin :left;*/
+	/*justify-content: space-around;*/
 }
 #bloc3{
 	display:flex;
-	text-align:left;
-	justify-content: space-around;
+	text-align:center;
+	/*margin-right:2%;
+	justify-content: space-around;*/
 }
 
-h3{
+/*h3{
 	font-size:80%;
 	text-align: right;
 	margin-top:-10px;
-}
+}*/
+
 footer{
 	bottom:0px;
 	width: 100%;
