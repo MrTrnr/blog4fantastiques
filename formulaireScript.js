@@ -1,3 +1,6 @@
+document.getElementById("demo2020").innerHTML = "mon nouveau titre de formulaire";
+
+
         console.log("coucou");
         function fetchPool(){
     fetch("http://localhost:3000/articles").then(response => response.json()).then(function(allPool){
