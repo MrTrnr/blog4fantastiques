@@ -74,7 +74,27 @@ body{
 	text-align: right;
 	margin-top:-10px;
 }*/
-
+.container {
+					display :flex;
+					align-items: center;
+					align-content :center;
+					justify-content:center;
+					width :100%;
+				}
+				#bloc1{
+				display:flex;
+				text-align:center;
+				}
+				.star {
+					display :flex;
+					align-items: center;
+					align-content :center;
+					justify-content:center;
+					
+				}
+				.rectangle{
+					width :50%;
+				}
 footer{
 	bottom:0px;
 	width: 100%;
