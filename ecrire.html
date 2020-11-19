@@ -1,70 +1,74 @@
 <!DOCTYPE html>
 <html lang="fr">
 	<head>
-		<meta charset= 'utf-8'>
+		<meta charset= 'utf-8'/>
 		<meta name="viewport" content="width, initial-scale-1.0"/>
-		<meta http-equiv="X-UA-Compatible" content="ie=edge">
-		<title>La page d'Aziza</title>
+		<meta http-equiv="X-UA-Compatible" content="ie=edge"/>
+		<title>La page de formulaire</title>
 		<link rel="stylesheet" href="ecrireStyle.css">
 		<script type="text/javascript" src="ecrireScript.js"></script>
-
+<!--télécharger la police Open sans-->
 		<link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
 	</head>
 	<body>
 		<header>
 			<H1>
 				FORMULAIRE DE RESSOURCES
-				<H1></header>
-				<div class="container"></div>
-				<form method="post" action="http://localhost:3000/articles">
-					<form id="myForm">
-
-					<fieldset>
-						<div id="logo">
-							<a href="#"><img id="logo" src="logodiscord.jpg" alt="le logo discord"/></a>
-						</div>
-						<P>
-							<label for="auteur">AUTEUR :</label>
-							<br>
-							<input type="text" name="auteur" id="auteur">
-						</P>
-						<br>
-						<P>
-							<label for="titre">TITRE :</label>
-							<br>
-							<input type="text" name="titre" id="titre">
-						</P>
-						<br>
-						<P>
-							<label for="contenu">CONTENU :</label>
-							<br>
-							<textarea  name="contenu" id="contenu" rows="10"></textarea>
-						</P>
-						<P>
-							<label for="date">DATE :</label>
-							<br>
-							<input type="date" name="date" id="date">
-						</P>
+			</H1>
+		</header>
+		<div class="container">
+			<form id="myForm">
+				<fieldset>
+					<div id="logo">
+						<a href="#"><img id="logo" src="logodiscord.jpg" alt="le logo discord"/></a>
 					</div>
-					<button>ENVOYER</button>					
+					<P>
+						<label for="auteur">AUTEUR :</label>
+						<br>
+						<input type="text" name="auteur" id="auteur">
+					</P>
+					<br>
+					<P>
+						<label for="titre">TITRE :</label>
+						<br>
+						<input type="text" name="titre" id="titre">
+					</P>
+					<br>
+					<P>
+						<label for="contenu">CONTENU :</label>
+						<br>
+						<textarea  name="contenu" id="contenu" rows="10"></textarea>
+					</P>
+					<P>
+						<label for="date">DATE :</label>
+						<br>
+						<input type="date" name="date" id="date">
+					</P>
+				</div>
+				<input type="submit" value="envoi">
+				
 				</fieldset>
 			</form>
-
-      </form>
-      <footer>
-      <div class ="circle">
-        <span class="circle_text"><strong>Liste articles
-        </strong></span>
-      </div>
-      <div class ="circle">
-        <span class="circle_text"><strong> Accès article</strong></span>
-      </div>
-          <div class ="circle">
-            <span class="circle_text"><strong>Ajouter ressources</strong></span>
-        
-        
-        
-      </div>
-    </footer>
-		</body>
-	</html>
+		</div>
+      	<footer>
+      		<div class ="circle">
+        		<span class="circle_text">
+					<strong>Liste articles
+					</strong>
+				</span>
+      		</div>
+      		<div class ="circle">
+        		<span class="circle_text">
+					<strong> Accès article
+					</strong>
+				</span>
+      		</div>
+        	<div class ="circle">
+        		<span class="circle_text">
+					<strong>Ajouter ressources
+					</strong>
+				</span>
+      		</div>
+    	</footer>
+	</body>
+</html>
