@@ -30,19 +30,20 @@ body{
 
 	display:flex;
 	flex-direction: column;
+
 }
 
 #star{
-	z-index:-1;
+	/*z-index:-1;*/
 	width:15%;
 	/*flex-direction:row;
 	text-align: left;*/
-	margin-left :80%;
+	/*margin-left :80%;*/
 
 }
 #bloc1{
 	display:flex;
-	text-align:center;
+	text-align:center
 	/*margin-right :2%;*/
 	/*justify-content: space-around;
 	/*margin-top :-0,5em;*/
@@ -60,7 +61,7 @@ body{
 #bloc3{
 	display:flex;
 	text-align:center;
-	/*margin-right:2%;
+		/*margin-right:2%;
 	justify-content: space-around;*/
 }
 

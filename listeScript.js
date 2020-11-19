@@ -13,20 +13,20 @@
 
                 // MARIE : cette ligne va afficher dans l'id "nomauteur" du doc html toutes
                 // MARIE : les valeurs des auteurs (allArticle[i].auteur), les uns à la suite des autres (ce que fait le +=)
-                document.getElementById("nomauteur").innerHTML +=" "+ "<br>" + allArticle[i].auteur;
+                document.getElementById("nomauteur").innerHTML +=" "+ "<br>" + allArticle[i].auteur + "<br>" + allArticle[i].titre + "<br>" + allArticle[i].date + "<br>" ;
                 
                 // MARIE : affiche dans la console du navigateur, tous les auteurs, les uns après les autres
                 console.log(allArticle[i].auteur);
 
                 // MARIE :  cette ligne va afficher dans l'id "titre" du doc html toutes
                 // MARIE : les valeurs des titres (allArticle[i].titre), les uns à la suite des autres (ce que fait le +=)
-                document.getElementById("titre").innerHTML +=" "+ "<br>" + allArticle[i].titre;
+                //document.getElementById("titre").innerHTML +=" "+ "<br>" + allArticle[i].titre;
                 
                 // MARIE : affiche dans la console du navigateur, tous les titres, les uns après les autres
                 console.log(allArticle[i].titre);
                 
                 console.log(allArticle[i].contenu);
-                document.getElementById("date").innerHTML +=" "+ "<br>" + allArticle[i].date;
+                //document.getElementById("date").innerHTML +=" "+ "<br>" + allArticle[i].date;
                 console.log(allArticle[i].date);
 
 // MARIE : ce que le code fait c'est afficher
