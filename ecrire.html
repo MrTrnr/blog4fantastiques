@@ -6,6 +6,8 @@
 		<meta http-equiv="X-UA-Compatible" content="ie=edge">
 		<title>La page d'Aziza</title>
 		<link rel="stylesheet" href="ecrireStyle.css">
+		<script type="text/javascript" src="ecrireScript.js"></script>
+
 		<link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
 	</head>
 	<body>
@@ -14,36 +16,40 @@
 				FORMULAIRE DE RESSOURCES
 				<H1></header>
 				<div class="container"></div>
-				<form>
+				<form method="post" action="http://localhost:3000/articles">
+					<form id="myForm">
+
 					<fieldset>
 						<div id="logo">
 							<a href="#"><img id="logo" src="logodiscord.jpg" alt="le logo discord"/></a>
 						</div>
 						<P>
-							<label>TITRE :</label>
+							<label for="auteur">AUTEUR :</label>
 							<br>
-							<input type="text" id="titre" title="titre">
+							<input type="text" name="auteur" id="auteur">
 						</P>
 						<br>
 						<P>
-							<label>AUTEUR :</label>
+							<label for="titre">TITRE :</label>
 							<br>
-							<input type="text" id="name" name="auteur">
+							<input type="text" name="titre" id="titre">
 						</P>
 						<br>
 						<P>
-							<label>CONTENU :</label>
+							<label for="contenu">CONTENU :</label>
 							<br>
-							<textarea  name="contenu" rows="10"></textarea>
+							<textarea  name="contenu" id="contenu" rows="10"></textarea>
 						</P>
 						<P>
-							<label>DATE :</label>
+							<label for="date">DATE :</label>
 							<br>
-							<input type="date" id="date" date="date">
+							<input type="date" name="date" id="date">
 						</P>
 					</div>
-					<button>ENVOYER</button>
+					<button>ENVOYER</button>					
 				</fieldset>
+			</form>
+
       </form>
       <footer>
       <div class ="circle">
