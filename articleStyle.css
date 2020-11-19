@@ -38,6 +38,10 @@ html, body
 	font-family: "Roboto";
 }
 
+h1 {
+	padding: 10px;
+}
+
 /* // CONTAINERS */
 .container
 {
@@ -45,9 +49,11 @@ html, body
 	display: flex;
 }
 
-.vert-container
+#vertical-container
 {
 	display: flex;
 	flex: 1;
 	flex-direction: column;
+	background-color: #424549;
+	padding: 10px;
 }
