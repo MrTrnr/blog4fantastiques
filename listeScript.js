@@ -8,26 +8,34 @@
         //affiche la longueur de la base (nombre d'éléments présents dans le tableau)
         console.log(allArticle.length)
         //pour variable de 0 à la longueur de la base tu m'affiches les données correspondantes à un index.
-        for (var i = 0 ; i < allArticle.length ; i++){
-            if (allArticle[i].auteur!=null){
+        //for (var i = 0 ; i < allArticle.length ; i++){
+           
+          for (var i = 0 ; i < allArticle.length ; i++){ 
+            let j = i+1
+           // let bloc = "bloc"+ j;
+           // let articleRef = "article"+ j;
+            //let articleNb  = "article-"+ j;
+           // if (allArticle[i].auteur!=null){//
 
                 // MARIE : cette ligne va afficher dans l'id "nomauteur" du doc html toutes
                 // MARIE : les valeurs des auteurs (allArticle[i].auteur), les uns à la suite des autres (ce que fait le +=)
-                document.getElementById("nomauteur").innerHTML +=" "+ "<br>" + allArticle[i].auteur + "<br>" + allArticle[i].titre + "<br>" + allArticle[i].date + "<br>" ;
-                
+               
+                document.getElementById('main').innerHTML+='<div class="container" id="bloc'+j+'"><div class="star blue" id="article'+j+'"><img id="star" src="six-pointed-star-blue.png" alt="star"></div><div class="rectangle" id ="article-'+j+'"></div></div>';
+                document.getElementById("article-"+ j).innerHTML +=" "+ "<br>" + allArticle[i].auteur + "<br>" + allArticle[i].titre + "<br>" + allArticle[i].date + "<br>" ;
+                document.getElementById('style').innerHTML+='<style>#bloc'+j+'{display:flex;text-align:center;}</style>';
                 // MARIE : affiche dans la console du navigateur, tous les auteurs, les uns après les autres
-                console.log(allArticle[i].auteur);
+                //console.log(allArticle[i].auteur);
 
                 // MARIE :  cette ligne va afficher dans l'id "titre" du doc html toutes
                 // MARIE : les valeurs des titres (allArticle[i].titre), les uns à la suite des autres (ce que fait le +=)
                 //document.getElementById("titre").innerHTML +=" "+ "<br>" + allArticle[i].titre;
                 
-                // MARIE : affiche dans la console du navigateur, tous les titres, les uns après les autres
-                console.log(allArticle[i].titre);
+                // MARIE : affiche dans la console du navaigteur, tous les titres, les uns après les autres
+                //console.log(allArticle[i].titre);
                 
-                console.log(allArticle[i].contenu);
+                //console.log(allArticle[i].contenu);
                 //document.getElementById("date").innerHTML +=" "+ "<br>" + allArticle[i].date;
-                console.log(allArticle[i].date);
+                //console.log(allArticle[i].date);
 
 // MARIE : ce que le code fait c'est afficher
 // auteur1 / auteur2 / auteur3
@@ -50,7 +58,7 @@
                 // MARIE : puis afficher une nouvelle ligne avec de nouvelles valeurs de auteur2 / titre2 / date2
                 // MARIE : puis une fois qu'une ligne a été affichée, incrémenter le compteur i
                 // MARIE : puis afficher une nouvelle ligne avec de nouvelles valeurs de auteur3 / titre3 / date3
-            }
+           // }
             
         }
        
