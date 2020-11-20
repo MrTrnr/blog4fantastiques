@@ -13,3 +13,5 @@ function fetchArticle(){
        console.log(oneArticle.date);
     })
 }
+
+fetchArticle();
