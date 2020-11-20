@@ -25,23 +25,22 @@ function fetchID(){
 
         //fetchArticle sert à afficher UN article en particulier frâce à son ID, comme l'ID est variable on doit entrer dans la route
         //avec l'url la base fixe "localhost:3000/articles" pour avoir accès au tableau + la variable qui va chercher le dernier article entré
-function fetchArticle(){
-    fetch("http://localhost:3000/articles/" + allArticle[indexDernierArticle]._id )
-    .then(response => response.json())
-    .then(function(oneArticle){
-                //affiche un objet défini par la route quand il y a une id
-        console.log(oneArticle);   
-        //concaténation données et affichage de ce qui nous intéresse    
-        document.getElementById("titreauteur").innerHTML=oneArticle.titre + " " + oneArticle.auteur + " " + oneArticle.date + "<br>" + "<br>" + oneArticle.contenu;
-       
-        //afficher ds la console les infos pour s'assurer qu'on ai le dernier article en date
-        console.log(oneArticle.titre);
-       console.log(oneArticle.auteur);
-       console.log(oneArticle.date);
-    })
-}
-
-fetchArticle();
+        function fetchArticle(){
+            fetch("http://localhost:3000/articles/" + allArticle[indexDernierArticle]._id )
+            .then(response => response.json())
+            .then(function(oneArticle){
+                        //affiche un objet défini par la route quand il y a une id
+                console.log(oneArticle);   
+                //concaténation données et affichage de ce qui nous intéresse    
+                document.getElementById("titreauteur").innerHTML=oneArticle.titre + " " + oneArticle.auteur + " " + oneArticle.date + "<br>" + "<br>" + oneArticle.contenu;
+               
+                //afficher ds la console les infos pour s'assurer qu'on ai le dernier article en date
+                console.log(oneArticle.titre);
+                console.log(oneArticle.auteur);
+                console.log(oneArticle.date);
+            })
+        }
+        fetchArticle();
     })
 }
 
