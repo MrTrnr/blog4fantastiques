@@ -40,8 +40,13 @@ html, body
 
 h1 {
 	padding: 10px;
+	color: #7289da;
 }
 
+header{
+	justify-content: flex-start;
+	align-items: flex-start;
+}
 /* // CONTAINERS */
 .container
 {
@@ -56,4 +61,24 @@ h1 {
 	flex-direction: column;
 	background-color: #424549;
 	padding: 10px;
+	margin: 10px;
+}
+
+footer{
+	background-color: #121416;
+	height: 50px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.internal-link{
+	font-size: 16px;
+	margin: 30px;
+	
+}
+
+a{
+	color: #7289da;
+	text-decoration: none;
 }
