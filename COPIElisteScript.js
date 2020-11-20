@@ -1,5 +1,40 @@
- console.log("bienvenue sur le blog");
-        function fetchArticle(){
+console.log("bienvenue sur le blog");
+//déclartion de j, qui correspond à l'ordre d'un article
+let j;
+
+//déclaration d'un tableau qui va contenir des _id, utiliser let
+
+
+
+
+// on va chercher toutes les ID des articles dans la base et on va les stocker dans un tableau
+function fetchAll(){
+    fetch("http://localhost:3000/articles")
+    .then(response => response.json())
+    .then(function(all){
+        //on exécute une boucle pour répéter l'opération du nombre d'article
+        for (var i = 0 ; i < all.length ; i++){
+// récupérer une _id de type "2665djioefj535ejfejfej", on la stocke dans un tableau. 
+
+
+
+        }
+}
+
+
+//cette fonction permet d'afficher le contenu d'un article
+function afficherArticle(j) {
+
+//ici utiliser la fonction fetch de Max qui récupère un article via une route qui contient son id
+
+
+
+//afficher dans le HTML, donc dans page du navigateur, les infos retournées par la fonction de Max
+    document.getElementById(paragraphe).innerHTML = objetretournéparlafonctiondemax.contenu;
+}
+
+
+    function fetchArticle(){
     fetch("http://localhost:3000/articles")
     .then(response => response.json())
     .then(function(allArticle){
@@ -11,12 +46,11 @@
         //for (var i = 0 ; i < allArticle.length ; i++){
            
           for (var i = 0 ; i < allArticle.length ; i++){ 
-            let j = i+1
-             let paragraphe = "paragraphe"+j;
-                function afficherArticle(j) {
-                document.getElementById("paragraphe"+ j).innerHTML = allArticle[i].paragraphe +j;
-                
-                }
+            j = i+1
+
+            //déclaration d'une variable pour les id de paragraphe
+            var paragraphe = "paragraphe"+j;
+
            // let bloc = "bloc"+ j;
            // let articleRef = "article"+ j;
             //let articleNb  = "article-"+ j;
