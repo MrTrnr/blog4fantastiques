@@ -30,12 +30,12 @@ app.use((req, res, next) => {
   next();
 });
 
-var bodyParser = require("body-parser");
-app.use(bodyParser.urlencoded({ extended: false }));
-app.use(bodyParser.json());
+// var bodyParser = require("body-parser");
+// app.use(bodyParser.urlencoded({ extended: false }));
+// app.use(bodyParser.json());
 
-//var multer = require('multer')().single();
-//app.use(multer);
+var multer = require('multer')().single();
+app.use(multer);
 
 // model for Article
 var articleSchema = mongoose.Schema({
