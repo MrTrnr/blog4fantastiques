@@ -16,16 +16,16 @@
 				FORMULAIRE DE RESSOURCES
 			</H1>
 		</header>
-		<div class="container">
+		<div class="container"><!--tout le formulaire est à l'intérieur de cette div-->
 			<form id="myForm">
 				<fieldset>
 					<div id="logo">
 						<a href="#"><img id="logo" src="logodiscord.jpg" alt="le logo discord"/></a>
 					</div>
 					<P>
-						<label for="auteur">AUTEUR :</label>
+						<label for="auteur">AUTEUR :</label><!--étiquette du formulaire -->
 						<br>
-						<input type="text" name="auteur" id="auteur">
+						<input type="text" name="auteur" id="auteur"><!--champ du formulaire-->
 					</P>
 					<br>
 					<P>
@@ -44,29 +44,25 @@
 						<br>
 						<input type="date" name="date" id="date">
 					</P>
+						<input type="submit" value="ENVOYER" id="envoi"><!--Button pour envoyer le formulaire dans la db-->
 				</div>
-				<input type="submit" value="envoi">
-				
 				</fieldset>
 			</form>
 		</div>
       	<footer>
       		<div class ="circle">
         		<span class="circle_text">
-					<strong>Liste articles
-					</strong>
+					<a href="liste.html">Liste articles</a>
 				</span>
       		</div>
       		<div class ="circle">
         		<span class="circle_text">
-					<strong> Accès article
-					</strong>
+					<a href="article.html"> Accès article</a>
 				</span>
       		</div>
         	<div class ="circle">
         		<span class="circle_text">
-					<strong>Ajouter ressources
-					</strong>
+					<a href="écrire.html">Ajouter article</a>
 				</span>
       		</div>
     	</footer>
