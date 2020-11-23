@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="fr">
+	<head>
+		<meta charset= 'utf-8'/>
+		<meta name="viewport" content="width, initial-scale-1.0"/>
+		<meta http-equiv="X-UA-Compatible" content="ie=edge"/>
+		<title>La page de formulaire</title>
+		<link rel="stylesheet" href="ecrireStyle.css">
+		<script type="text/javascript" src="ecrireScript.js"></script>
+<!--télécharger la police Open sans-->
+		<link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+	</head>
+	<body>
+		<header>
+			<H1>
+				Le blog des 4 fantastiques
+			</H1>
+				<h2>FORMULAIRE AJOUTER UN ARTICLE</h2>
+		</header>
+		<div class="container"><!--tout le formulaire est à l'intérieur de cette div-->
+			<form id="myForm">
+				<fieldset>
+					<P>
+						<label for="auteur">AUTEUR :</label><!--étiquette du formulaire -->
+						<br>
+						<input type="text" name="auteur" id="auteur"><!--champ du formulaire-->
+					</P>
+					<br>
+					<P>
+						<label for="titre">TITRE :</label>
+						<br>
+						<input type="text" name="titre" id="titre">
+					</P>
+					<br>
+					<P>
+						<label for="contenu">CONTENU :</label>
+						<br>
+						<textarea  name="contenu" id="contenu" rows="15"></textarea>
+					</P>
+					<P>
+						<label for="date">DATE :</label>
+						<br>
+						<input type="date" name="date" id="date">
+					</P>
+						<input type="submit" value="ENVOYER" id="envoi"><!--Button pour envoyer le formulaire dans la db-->
+				</div>
+				</fieldset>
+			</form>
+		</div>
+      	<footer>
+      		<div class ="circle">
+        		<span class="circle_text">
+					<a href="liste.html">Liste articles</a>
+				</span>
+      		</div>
+      		<div class ="circle">
+        		<span class="circle_text">
+					<a href="article.html"> Accès article</a>
+				</span>
+      		</div>
+        	<div class ="circle">
+        		<span class="circle_text">
+					<a href="écrire.html">Ajouter article</a>
+				</span>
+      		</div>
+    	</footer>
+	</body>
+</html>
