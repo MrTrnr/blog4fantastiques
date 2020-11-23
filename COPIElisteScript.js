@@ -7,6 +7,7 @@ let articleNb;
 let TableauId;
 
 // fonction qui remplit le tableau avec les ID des articles. On va chercher toutes les ID des articles dans la base avec la route "http://localhost:3000/articles" et on va les stocker dans un tableau
+//NE PAS UTILISER CETTE FONCTION 
 function remplirTableauId(){
 
     // ici j'utilise la méthode fetch() qui permet de communiquer avec le serveur blog.js
@@ -30,8 +31,8 @@ function remplirTableauId(){
     });
 };
 
-// appel de la fonction qui remplit le tableau des ID des articles.
-remplirTableauId();
+// NE PAS L'UTILISER appel de la fonction qui remplit le tableau des ID des articles.
+//remplirTableauId();
 
 // cette fonction permet d'afficher le contenu d'un article, je passe comme paramètre
 // la variable, qui correspond à l'ordre d'un article
@@ -55,7 +56,7 @@ function afficherUnArticle(articleNb){
 };
 
 // fonction qui affiche les données titre, auteur, date de tous les articles
-function afficherLesArticles(){
+function afficherLesArticles((allArticle[i]._id){
 
     // la méthode fetch() permet de communiquer avec le serveur blog.js sur une route 
     // spécifique à chaque article, une route de type http://localhost:3000/articles/id_de_l_article
@@ -75,7 +76,7 @@ function afficherLesArticles(){
         // MARIE : les valeurs des auteurs (allArticle[i].auteur), les uns à la suite des autres (ce que fait le +=)
        
         document.getElementById('main').innerHTML+='<div class="container" id="bloc'+articleNb+'"><div class="star blue" id="article'+articleNb+'"><img id="star" src="six-pointed-star-blue.png" alt="star"></div><div class="rectangle" id ="article-'+articleNb+'"></div></div>';
-        document.getElementById("article-"+ articleNb).innerHTML +="<p onclick='afficherUnArticle("+articleNb+")'>"+ "<br>"+"<span id ='art"+articleNb+"'>" +articleNb+"</span>" + "<br>" + allArticle[i].auteur + "<br>" + allArticle[i].titre + "<br>" + allArticle[i].date + "<br>" + '<div id="paragraphe'+articleNb+'"></div>'+"</p>";
+        document.getElementById("article-"+ articleNb).innerHTML +="<p onclick='afficherUnArticle("+articleNb+")'>"+ "<br>"+"<span id ='art"+articleNb+"'>" +articleNb+"</span>" + "<br>" + allArticle[i].auteur + "<br>" + allArticle[i].titre + "<br>" + allArticle[i].date + "<br>" + '<div id="paragraphe'+articleNb+ allArticle[i].id'"></div>'+"</p>";
         document.getElementById('style').innerHTML+='<style>#bloc'+articleNb+'{display:flex;text-align:center;}</style>';
         
         // MARIE : affiche dans la console du navigateur, tous les auteurs, les uns après les autres
