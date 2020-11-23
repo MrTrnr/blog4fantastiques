@@ -1,0 +1,160 @@
+html{
+	font-family:'Open Sans', sans-serif;
+}
+header {
+	width : 100%;
+	background-color: #7289DA;
+}
+#entete{
+	display:flex;
+	flex-direction:row;
+	justify-content: space-around;
+}
+h1{
+	margin :0 0 0 0;
+
+}
+#logoTexte{
+	text-align :left;
+}
+
+/*#logodiscord {
+	width: 10%;
+	text-align:left;
+}*/
+body{
+	background-color: #424549;
+	margin :0
+}
+#main{
+
+	display:flex;
+	flex-direction: column;
+
+}
+
+
+#star{
+	/*z-index:-1;*/
+	width:15%;
+	/*flex-direction:row;
+	text-align: left;*/
+	/*margin-left :80%;*/
+
+}
+/*#bloc1{
+	display:flex;
+	text-align:center;
+	/*background-color :red;*/
+		/*margin-right :2%;*/
+	/*justify-content: space-around;
+	/*margin-top :-0,5em;
+}	
+
+/*#bloc2{
+	display:flex;
+	text-align:center;
+	/*background-color :yellow;*/
+	/*margin-right :2%;/
+	/*margin :center;
+	/*color:red;
+	margin :left;*/
+	/*justify-content: space-around;*/
+/*}
+#bloc3{
+	display:flex;
+	text-align:center;
+	/*background-color :pink;*/	
+	/*margin-right:2%;
+	justify-content: space-around;
+}*/
+
+/*h3{
+	font-size:80%;
+	text-align: right;
+	margin-top:-10px;
+}*/
+.container {
+					display :flex;
+					align-items: center;
+					align-content :center;
+					justify-content:center;
+					width :100%;
+				}
+				#bloc1{
+				display:flex;
+				text-align:center;
+				}
+				.star {
+					display :flex;
+					align-items: center;
+					align-content :center;
+					justify-content:center;
+					
+				}
+				.rectangle{
+					width :50%;
+				}
+footer{
+	bottom:0px;
+	width: 100%;
+	background-color: #7289DA;
+	/*position:absolute;*/
+}
+#bottom {
+	display:flex;
+	justify-content: center;
+} 
+.circle {
+	height: 100px; 
+	width: 100px; 
+	background-color: #C4C4C4;
+	border: 1px solid rgba(0, 0, 0, 1);
+	border-radius: 50%; 
+}
+#contenu {
+	display:flex;
+	width : 400px;
+	height :50px;
+	justify-content: space-around;
+	margin :10px 100px 100px 100px;
+} 
+
+h4{
+	text-align: center;
+}
+/*ESSAI STARS*/
+/*.star{
+	z-index: -1;
+	width: 0;
+	height: 0;
+	border-left: 50px solid transparent;
+	border-right: 50px solid transparent;
+	border-bottom: 100px solid #1E2124;
+	position: relative;
+
+.star:after{
+	/*z-index: -1;
+	content:'';
+	border: 1px solid #1E2124;
+	border-left: 50px solid transparent;
+	border-right: 50px solid transparent;
+	border-top: 100px solid #1E2124;
+	width:0;
+	height:0;
+	position: absolute;
+	top:30px;
+	left:-50px;
+
+}*/
+/*.white {/*
+	
+	border-bottom: 100px solid #C4C4C4;
+	position: relative;
+	
+}
+.white:after{/*
+	
+	border-top: 100px solid #C4C4C4;
+	position: absolute;
+	}*/
